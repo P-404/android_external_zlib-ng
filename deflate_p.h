@@ -18,6 +18,7 @@ void check_match(deflate_state *s, Pos start, Pos match, int length);
 #endif
 void flush_pending(PREFIX3(stream) *strm);
 
+Z_INTERNAL unsigned read_buf(PREFIX3(stream) *strm, unsigned char *buf, unsigned size);
 /* ===========================================================================
  * Save the match info and tally the frequency counts. Return true if
  * the current block must be flushed.

@@ -20,7 +20,7 @@ srcs_arm = [
     "arch/arm/chunkset_neon.c",
     "arch/arm/crc32_acle.c",
     "arch/arm/insert_string_acle.c",
-    "arch/arm/slide_hash_neon.c",
+    "arch/arm/slide_neon.c",
 ]
 
 // Not all CPUs will support these features, but compatibility is checked at runtime.
@@ -98,9 +98,7 @@ libz_srcs = [
     "inffast.c",
     "inflate.c",
     "inftrees.c",
-    "insert_string_roll.c",
     "insert_string.c",
-    "slide_hash.c",
     "trees.c",
     "uncompr.c",
     "zutil.c",
